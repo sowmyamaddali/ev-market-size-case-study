@@ -59,3 +59,31 @@ A thorough univariate and bivariate exploratory data analysis (EDA) was conducte
 
 ---
 
+## Modeling
+
+The goal was to classify electric vehicles into -
+- **Battery Electric Vehicle (BEV)** or
+- **Plug-in Hybrid Electric Vehicle (PHEV)**
+
+### Models Used:
+- **Logistic Regression** (with class weights to address imbalance)
+- **Random Forest Classifier** (with class weights and tuned for interpretability)
+
+### Feature Selection:
+Models were trained using a minimal, interpretable feature set:
+- `model_year`
+- `electric_range`
+
+The `make` and `model` features were excluded to avoid overfitting and ensure the model could generalize beyond brand identity.
+
+### Results:
+
+| Model              | Accuracy | F1 Score (PHEV) | F1 Score (BEV) |
+|--------------------|----------|------------------|----------------|
+| Logistic Regression| 86.7%    | 0.76             | 0.91           |
+| Random Forest      | 99.99%   | 1.00             | 1.00           |
+
+Although the Random Forest model achieved near-perfect performance, this is supported by the feature distribution: a boxplot of `electric_range` shows clear separation between BEVs and PHEVs. The model learned from this strong signal, not from data leakage.
+
+### Final Model:
+The Random Forest model was saved and will be used in the Streamlit app for real-time prediction.
