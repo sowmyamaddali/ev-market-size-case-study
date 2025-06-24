@@ -88,7 +88,7 @@ Raw dataset columns included vehicle model details, city, postal code, base MSRP
 ---
 
 ## References
-1. ![Washington State EV Data](https://data.wa.gov/Transportation/Electric-Vehicle-Population-Data/f6w7-q2d2/about_data)
-2. ![SHAP Documentation](https://shap.readthedocs.io/en/latest/)
-3. ![Kepler.gl](https://kepler.gl/)
-4. ![Streamlit Docs](https://docs.streamlit.io/)
+1. [Washington State EV Data](https://data.wa.gov/Transportation/Electric-Vehicle-Population-Data/f6w7-q2d2/about_data)
+2. [SHAP Documentation](https://shap.readthedocs.io/en/latest/)
+3. [Kepler.gl](https://kepler.gl/)
+4. [Streamlit Docs](https://docs.streamlit.io/)
