@@ -26,9 +26,9 @@ Raw dataset columns included vehicle model details, city, postal code, base MSRP
 **Data Visualizations (Exploration)**
 1. Top 20 cities by number of EVs
 2. Feature impact on regression model using SHAP
-3. ![Folium Heatmap](../visualizations/ev_pop_folium_heatmap.png)
+3. ![Folium Heatmap](visualizations/ev_pop_folium_heatmap.png)
 Heatmap of EV concentration in Washington using Folium
-4. ![Kepler Map](../visualizations/ev_pop_kepler_map.png)
+4. ![Kepler Map](visualizations/ev_pop_kepler_map.png)
 Interactive EV density map using Kepler.gl
 
 ---
